@@ -1,17 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from './pages/MainPage';
+import FirstInfo from './components/FirstInfo';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MainMenu from './components/MainMenu';
+import Integrantes from './components/Integrantes';
+import Rest from './components/Rest';
 
 function App() {
   return (
-    <Router>
-    <Header />
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-    </Routes>
-    <Footer />
-  </Router>
+    <>
+      <MainMenu/>
+      <div className ="contentContainer">
+        <Header />
+        <FirstInfo/>
+        <Rest/>
+        <Integrantes/>
+      </div>
+      <Footer />
+    </>
   )
 }
 
