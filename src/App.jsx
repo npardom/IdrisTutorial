@@ -8,6 +8,7 @@ import Rest from './components/Rest';
 function App() {
   return (
     <>
+    <div className ="masterContainer"></div>
       <MainMenu/>
       <div className ="contentContainer">
         <Header />

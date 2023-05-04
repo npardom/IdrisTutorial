@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 body {
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/backgroundRed.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,14 +15,47 @@ a {
   text-decoration: none;
 }
 
+.masterContainer{
+  background-image: url("./assets/backgroundBlue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:-100;
+  opacity: 0%;
+}
+
 .contentContainer{
-  height:82vh;
+  height:85vh;
   width:90%;
   overflow-y: auto;
-  margin: 6em auto 0 auto;
+  margin: 5em auto 0 auto;
   scroll-behavior:smooth
 }
 
+@media only screen and (max-height:900px){
+  .contentContainer{
+    height:80vh;
+  }
+}
+
+@media only screen and (max-height:700px){
+  .contentContainer{
+    height:76vh;
+  }
+}
+
+@media only screen and (max-height:550px){
+  .contentContainer{
+    height:70vh;
+  }
+}
 .contentContainer::-webkit-scrollbar {
   width: 0.4em;
 }
@@ -205,7 +238,7 @@ hr {
 
 .integrantesContainer{
   width: 55%;
-  margin:1em auto 4em auto;
+  margin:1em auto 1em auto;
   font-size: 1.2em;
   text-align: center;
   display: flex;
