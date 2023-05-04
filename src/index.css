@@ -29,6 +29,17 @@ a {
   right:0;
   z-index:-100;
   opacity: 0%;
+  animation: rotate 0.5s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+to {
+  opacity: 100%;
+}
 }
 
 .contentContainer{
@@ -277,7 +288,7 @@ h2 {
 .integranteItem{
   font-family: "Source Sans Pro", sans-serif;
   background-color: white;
-  color:rgb(26, 2, 2);
+  color:rgb(0, 0, 0);
   border-radius: 0.4em;
   padding:0.4em 1.2em 0.4em 1.2em;
   margin: 0.25em 0 0.25em 0;
