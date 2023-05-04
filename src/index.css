@@ -21,7 +21,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y:center;
   position: fixed;
   top: 0;
   bottom:0;
@@ -29,7 +29,7 @@ a {
   right:0;
   z-index:-100;
   opacity: 0%;
-  animation: rotate 0.5s linear infinite;
+  animation: rotate 0.8s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
   animation-iteration-count: 1;
@@ -39,6 +39,34 @@ a {
 @keyframes rotate {
 to {
   opacity: 100%;
+}
+}
+
+.linesContainer{
+  background-image: url("./assets/lines.png");
+  background-size: 80em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y:top;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:-90;
+  opacity: 70%;
+  animation: rotate2 0.9s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate2 {
+to {
+  background-size:120em;
+  background-position-y:bottom;
 }
 }
 
@@ -308,7 +336,7 @@ h2 {
 .dummyContainer{
   width:60%;
   margin: 0 auto 0 auto;
-  height:20em;
+  height:120em;
   display: flex;
   align-items: center;
   justify-content: center;

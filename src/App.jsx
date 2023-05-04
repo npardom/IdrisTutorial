@@ -19,6 +19,7 @@ function App() {
   return (
     <>
     <div className ="masterContainer"></div>
+    <div className ="linesContainer"></div>
       <MainMenu/>
       <div className ="contentContainer" id ="contentContainerId">
         <Header />
