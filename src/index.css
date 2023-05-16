@@ -172,8 +172,19 @@ p {
   width: 60%;
   margin: 1.5em auto 1.5em auto;
   font-size: 1.2em;
-  text-align: center;
   animation: 2.5s ease-out 0s 1 slideInFromBottom2;
+}
+
+.leftAligned{
+  text-align: left;
+}
+
+.rightAligned{
+  text-align: right;
+}
+.centerAllign{
+  margin-top:0.2em;
+  text-align: center;
 }
 
 @keyframes slideInFromBottom2 {
@@ -358,4 +369,94 @@ h2 {
     bottom: 1.5em;
     opacity: 100%;
   }
+}
+
+.wrapper {
+	width:60%;
+  height: 19em;
+	margin: 0 auto;
+  display: none;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+
+@media only screen and (max-width:700px){
+  .wrapper{
+    height: 18em;
+  }
+}
+
+@media only screen and (max-width:550px){
+  .wrapper{
+    height: 17em;
+  }
+}
+
+.wrapper::-webkit-scrollbar {
+  height: 0.4em;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.139);
+  border-radius: 5em;
+}
+
+.wrapper::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5em;
+}
+
+.slide {
+  height:85%;
+  margin: 0 1em 1em 0;
+}
+
+.instPic{
+  height:100%;
+  margin: 0;
+}
+
+.buttonContainer{
+  width:60%;
+  display: flex;
+  flex-direction: row;
+  margin:1em auto 1em auto;
+  justify-content: space-between;
+}
+
+.installOptButton{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
+  border: 0.15em solid rgb(255, 255, 255);
+  border-radius: 0.5em;
+  width:49%;
+  margin:0;
+  transition: 0.5s all;
+}
+
+.installOptButton:hover{
+  background-color: rgba(24, 3, 3, 0.9);
+  transition: 0.5s all;
+}
+
+.selectedOne{
+  background-color: rgba(255, 255, 255,1);
+  color:black;
+  transition: 0.5s all;
+  font-weight:bold ;
+}
+
+.selectedOne:hover{
+  background-color: rgba(255, 255, 255,1);
+  color:black;
+  transition: 0.5s all;
+  font-weight:bold ;
+}
+
+.showInst {
+  display:flex;
 }

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import MainMenu from './components/MainMenu';
 import Integrantes from './components/Integrantes';
 import Rest from './components/Rest';
+import Installation from './components/Installation';
 import { useEffect } from 'react';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <div className ="contentContainer" id ="contentContainerId">
         <Header />
         <FirstInfo/>
+        <Installation/>
         <Rest/>
         <Integrantes/>
       </div>
