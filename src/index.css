@@ -480,26 +480,6 @@ hr {
   display:flex;
 }
 
-.canvaContainer{
-  position: relative;
-  width: 60%;
-  height: 0;
-  padding-top: 34%;
-  margin: auto; 
- will-change: transform;
-}
-
-.containerCanva2{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border: none;
-  padding: 0;
-  margin: 0;
-
-}
 
 .installLink{
   margin:auto;
@@ -643,4 +623,61 @@ hr {
 
 .codeContainer{
   text-align: center;
+}
+.presentationTitleContainer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadIcon{
+  width:1.3em;
+  margin:0;
+}
+
+.containerDownload{
+  padding: 0.3em 0.4em 0.3em 0.4em;
+  border-radius: 0.5em;
+  margin: 0.5em 0 0 0.7em;
+  transition: 0.3s;
+}
+
+.containerDownload:hover{
+  background-color: rgba(255, 255, 255, 0.29);
+  padding: 0.3em 0.4em 0.3em 0.4em;
+  border-radius: 0.5em;
+  margin: 0.5em 0 0 0.7em;
+  transition: 0.3s;
+}
+.macContainer{
+  width:75%;
+  max-width: 45em;
+  margin:auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mac{
+  width:100%;
+}
+
+.canvaContainer{
+  position: absolute;
+  width: 79%;
+  padding-top: 45%;
+  margin: auto; 
+ will-change: transform;
+}
+
+.containerCanva2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+
 }
