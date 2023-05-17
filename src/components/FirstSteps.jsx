@@ -75,7 +75,70 @@ main = do
 
       <br></br>
 
-      <p> En Idris <code> Nat</code> es un tipo que representa números naturales, es decir, números enteros positivos. Estos son representados con la notación de sucesión de Peano, es decir, <code className="idrisCode">Z</code> representa el cero, y <code className="idrisCode">S</code> representa el sucesor de un número natural. Por ejemplo, el número 3 se representa como <code className="idrisCode">S (S (S Z))</code>.</p>
+      <p> En Idris <code> Nat</code> es un tipo que representa números naturales (enteros no negativos). Estos son representados con la notación de sucesión de Peano, es decir, <code className="idrisCode">Z</code> representa el cero, y <code className="idrisCode">S</code> representa el sucesor de un número natural. Por ejemplo, el número 3 se representa como <code className="idrisCode">S (S (S Z))</code>.</p>
+
+      <p> Para conocer más acerca de los tipos de datos primitivos, constructores y sobre tipos dependientes, puedes ver la presentación o la<a href = "https://idris2.readthedocs.io/en/latest/tutorial/typesfuns.html#types-and-functions"> documentación de Idris</a>.</p>
+
+
+      <br></br>
+
+      <h3> Funciones </h3>
+
+      <p> En la programación funcional es bastante común usar recursión para nuestras funciones, Podemos ver un ejemplo de la función factorial: </p>
+
+      <pre>
+        <code className="idrisCode">
+        {`factorial : Nat -> Nat
+factorial Z = 1
+factorial (S k) = S k * factorial k`}
+        </code>
+      </pre>
+
+      <p> En este caso, la función factorial recibe un número natural y devuelve otro número natural. Si el número es cero, devuelve 1, y si no, devuelve el número multiplicado por el factorial del número anterior. </p>
+
+      <p> Teniendo en cuenta la notación de sucesión de Peano, calcular el factorial de S(S(S Z))  (3) será igual a S(S(S(S(S(S Z))))) (6) </p>
+
+      <br></br>
+
+      <p> En Idris, las funciones pueden tener múltiples argumentos. Por ejemplo, la función <code className="idrisCode">add</code> suma dos enteros:</p>
+
+      <pre>
+        <code className="idrisCode">
+        {`add : Int -> Int -> Int
+add n m = n + m `}
+        </code>
+      </pre>
+
+      <p> Las funciones, además, deben contar con completitud, es decir, deben tener un caso para cada posible valor de sus argumentos. Por ejemplo, la siguiente función no es válida:</p>
+
+
+      <pre>
+        <code className="idrisCode">
+        {`add : Nat -> Nat -> Nat
+        add Z n = n`}
+        </code>
+      </pre>
+
+      <p> Si se requiere una función que no sea completa, se puede usar la palabra reservada <code className="idrisCode">partial</code> antes de iniciar la función </p>
+
+      <p> Idris también permite la definición de operadores infix personalizados. Si quieres conocer más, puedes visitar esta sección en la<a href="https://idris2.readthedocs.io/en/latest/tutorial/typesfuns.html#data-types"> documentación de Idris</a>.</p>
+
+      <br></br>
+
+
+
+    
+      
+      
+
+
+
+
+
+
+      
+
+
 
 
 
