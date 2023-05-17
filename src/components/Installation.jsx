@@ -57,7 +57,7 @@ function Installation() {
     </div>
 
     <div className="wrapper" id="macInstall">
-      <div class="slide">
+      <div className="slide">
           <img src={inst5} className ="instPic" />
           <p className ="centerAllign"><b>1)</b> Descargar gestor de paquetes <b>Homebrew</b> </p>
      </div>

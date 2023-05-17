@@ -308,6 +308,7 @@ hr {
   margin: 0;
   border-radius: 1.5em;
   transition: 1s ease-out;
+  z-index: 1000;
 }
 
 .shown{
@@ -386,33 +387,6 @@ hr {
 
 .paragraph1{
   margin: 0 0 0.7em 0;
-}
-
-.dummyContainer{
-  width:60%;
-  margin: 0 auto 0 auto;
-  height:120em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.7em;
-  animation: 4s ease-out 0s 1 dummyAnimation;
-}
-
-@keyframes dummyAnimation {
-  0% {
-    bottom: 0em;
-    opacity: 0%;
-  }
-  40% {
-    bottom: 0em;
-    opacity: 0%;
-  }
-  100% {
-    bottom: 1.5em;
-    opacity: 100%;
-  }
 }
 
 .wrapper {
