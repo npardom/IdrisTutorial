@@ -13,12 +13,9 @@ function FirstSteps() {
       
       <pre>
         <code className="idrisCode">
-{
-`
-main : IO ()            
-main = putStrLn "Hola Mundo!"`
-
-}
+        {`
+        main : IO ()            
+        main = putStrLn "Hola Mundo!"`}
       </code>
       </pre> 
       <p>Para ejecutarlo, debes guardar el código en un archivo con extensión .idr, por ejemplo, holaMundo.idr.</p>
@@ -56,7 +53,48 @@ main = do
 
       <br></br>   
 
-      <p> Bastante sencillo, ¿no?. La programación funcional es muy distinta a la programación imperativa, pero aunque su curva de aprendizaje es un poco más empinada, aprender a programar con este paradigma nos permite, como programadores, aprender nuevas perspectivas para resolver problemas y nos permite mejorar nuestras habilidades de abstracción y pensamiento lógico. </p>
+      <h3> Tipos de datos </h3>
+
+      <p> En Idris, los tipos de datos se definen con la palabra reservada <code className="idrisCode">data</code>. Por ejemplo, para definir un tipo de dato <code className="idrisCode">Color </code> con tres valores posibles, <code className="idrisCode">Red</code>, <code className="idrisCode">Green </code> y <code className="idrisCode">Blue </code> podemos escribir lo siguiente:</p>
+
+      <pre> 
+        <code className="idrisCode">
+        { `data Color = Red | Green | Blue`}
+        </code>
+      </pre>
+
+      También podemos definir un tipo de dato con parámetros, por ejemplo, Idris define el tipo de dato <code className="idrisCode">Maybe </code> (que puede contener un valor o no) de la siguiente manera:
+
+      <pre>
+        <code className="idrisCode">
+        {`data Maybe a = Nothing | Just a`}
+        </code>
+      </pre>
+
+      <p> <code className="idrisCode">a</code> es un parámetro de tipo. Por ejemplo, <code className="idrisCode">Maybe Int</code> es un tipo que puede contener un valor entero o no, y <code className="idrisCode">Maybe Nat</code> es un tipo que puede contener un número natural o no.</p>
+
+      <br></br>
+
+      <p> En Idris <code> Nat</code> es un tipo que representa números naturales, es decir, números enteros positivos. Estos son representados con la notación de sucesión de Peano, es decir, <code className="idrisCode">Z</code> representa el cero, y <code className="idrisCode">S</code> representa el sucesor de un número natural. Por ejemplo, el número 3 se representa como <code className="idrisCode">S (S (S Z))</code>.</p>
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+
 
 
 
