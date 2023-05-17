@@ -3,8 +3,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MainMenu from './components/MainMenu';
 import Integrantes from './components/Integrantes';
-import Rest from './components/Rest';
 import Installation from './components/Installation';
+import Presentation from './components/Presentation';
+import Characteristics from './components/Characteristics';
+
 import { useEffect } from 'react';
 
 function App() {
@@ -26,7 +28,8 @@ function App() {
         <Header />
         <FirstInfo/>
         <Installation/>
-        <Rest/>
+        <Characteristics/>
+        <Presentation/>
         <Integrantes/>
       </div>
       <Footer />
