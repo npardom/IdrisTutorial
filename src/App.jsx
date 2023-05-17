@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MainMenu from './components/MainMenu';
 import Integrantes from './components/Integrantes';
+import FirstSteps from './components/FirstSteps';
 import Installation from './components/Installation';
 import Presentation from './components/Presentation';
 import Characteristics from './components/Characteristics';
@@ -28,6 +29,7 @@ function App() {
         <Header />
         <FirstInfo/>
         <Installation/>
+        <FirstSteps/>
         <Characteristics/>
         <Presentation/>
         <Integrantes/>
