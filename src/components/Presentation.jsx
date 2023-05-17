@@ -16,7 +16,7 @@ function Presentation() {
     <div className="macContainer">
     <img src={mac} className="mac"/>
     <div className ="canvaContainer">
-  <iframe loading="lazy" className="containerCanva2" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFhTrf_V0o&#x2F;view?embed"></iframe>
+  <iframe loading="lazy" className="containerCanva2" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFhTrf_V0o&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
   </div>
   </div>
   </>
