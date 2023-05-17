@@ -1,6 +1,6 @@
 function FirstInfo() {
   return (
-    <div className = "firstInfo">
+    <div className = "firstInfo" id ="firstInfo1">
         <hr></hr>
         <p className="leftAligned">
             <b>Idris</b> es un lenguaje de programación puramente funcional, <b>caracterizado por sus tipos dependientes</b>.

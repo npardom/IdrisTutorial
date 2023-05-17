@@ -28,9 +28,9 @@ function App() {
       <div className ="contentContainer" id ="contentContainerId">
         <Header />
         <FirstInfo/>
+        <Characteristics/>
         <Installation/>
         <FirstSteps/>
-        <Characteristics/>
         <Presentation/>
         <Integrantes/>
       </div>

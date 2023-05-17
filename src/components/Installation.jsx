@@ -30,9 +30,9 @@ function Installation() {
         setSelectedWindows(false)
     }
   return (
-    <div className ="installationContainer">
+    <div className ="installationContainer" id ="installId">
    <h2 className="titleIntegrantes centerAllign">Instalación</h2>
-   <a className ="installLink" href={selectedWindows ? "https://idris2.readthedocs.io/en/latest/tutorial/windows.html":"https://idris2.readthedocs.io/en/latest/tutorial/starting.html"} >Ver instrucciones detalladas</a>
+   <a className ="installLink" target="_blank" href={selectedWindows ? "https://idris2.readthedocs.io/en/latest/tutorial/windows.html":"https://idris2.readthedocs.io/en/latest/tutorial/starting.html"} >Ver instrucciones detalladas</a>
     <div className ="buttonContainer">
         <div className ={selectedWindows ? "installOptButton selectedOne": "installOptButton"} onClick={toggleInst}>Windows</div>
         <div className ={!selectedWindows ? "installOptButton selectedOne": "installOptButton"} onClick={toggleInst2}>Mac y Linux</div>

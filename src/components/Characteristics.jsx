@@ -1,5 +1,5 @@
 import { useState } from "react"
-import shell from "../assets/shell.png"
+import shell from "../assets/shell2.png"
 
 function Characteristics() {
     const [counter, setCounter] =useState(0);
@@ -42,13 +42,15 @@ function Characteristics() {
 
     function sendEnter(e) {
         e.preventDefault();
+        document.getElementById('inputText').value = '';
         setCounter(counter+1);
     }
 
   return (
-    <>
-    <h2 className="titleCaracteristicas centerAllign">Características</h2>
+    <div className ="characMainContainer">
+    <h2 className="titleCaracteristicas centerAllign" id="characteristicsId">Características</h2>
     <div className="characteristicContainer">
+        
         <img src={shell} className ="shellImage"></img>
         <div className ="charTextContainer" >
         {counter >= 1 ? <FirstChar/>: <></>}
@@ -58,12 +60,12 @@ function Characteristics() {
         {counter >= 5 ? <FifthChar/>: <></>}
         {counter >= 6 ? <SixthChar/>: <></>}
         {counter < 6 ? <form onSubmit={sendEnter}>
-        <input placeholder="Presiona una tecla para continuar" className ="inputField" autoFocus onChange={sendEnter}></input> 
+        <input placeholder="Presiona una tecla para continuar" className ="inputField" id ="inputText" autoFocus onChange={sendEnter}></input> 
         </form>:
         <></>}
         </div>
     </div>
-    </>
+    </div>
   )
 }
 

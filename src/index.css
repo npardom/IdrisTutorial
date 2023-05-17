@@ -14,11 +14,43 @@ body {
 }
 
 a {
+  color:rgb(155, 225, 255);
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+a:visited {
+  color:rgb(155, 225, 255);
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+a:hover {
+  color:white;
+  transition: 0.2s;
+}
+
+
+.linkNoDecor {
   text-decoration: none;
 }
 
 h2{
-  font-size: 1.7em;
+  font-size: 1.9em;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin: 0;
+}
+
+h3{
+  font-size: 1.3em;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+  color: white;
+  border: 0.1em solid rgb(255, 255, 255);
+  width:fit-content;
+  padding:0.2em 0.5em 0.2em 0.5em;
+  border-radius: 0.3em;
 }
 
 .masterContainer{
@@ -190,12 +222,18 @@ p {
   text-align: left;
 }
 
-.rightAligned{
-  text-align: right;
+.containerRight{
+  justify-content: right;
+  display:flex;
 }
+
 .centerAllign{
   margin-top:0.2em;
   text-align: center;
+}
+
+.justifyAllign{
+  text-align: justify;
 }
 
 @keyframes slideInFromBottom2 {
@@ -326,11 +364,6 @@ hr {
   }
 }
 
-h2 {
-  font-family: 'Pathway Gothic One', sans-serif;
-  margin: 0;
-}
-
 .integrantesContainer2{
   width:fit-content;
 }
@@ -388,7 +421,7 @@ h2 {
 	margin: 0 auto;
   display: none;
   flex-direction: row;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
 }
 
@@ -509,6 +542,21 @@ h2 {
   font-weight: bold;
 }
 
+.installLink:visited{
+  margin:auto;
+  width:fit-content;
+  display: block;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  color:white;
+  transition: 0.2s all;
+  margin-bottom:0.5em;
+  margin-top:-0.65em;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .installLink:hover{
   color:rgb(255, 172, 172);
   text-decoration: underline;
@@ -518,19 +566,55 @@ h2 {
 .installationContainer{
   background-color: rgba(150, 150, 150, 0.3);
   width:56%;
-  margin:auto;
+  margin:2em auto 2em auto;
   padding: 3em 2em 2em 2em;
   border-radius: 2em;
+  animation: 3s ease-out 0s 1 slideInFromRight2;
 }
+
+@keyframes slideInFromRight2 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.characMainContainer{
+  animation: 3.5s ease-out 0s 1 slideInFromRight3;
+}
+
+@keyframes slideInFromRight3 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+   margin-left:5em;
+  }
+  100% {
+    margin-left:0em;
+    opacity: 100%;
+  }
+}
+
+
 
 .characteristicContainer{
   width:62%;
   height:fit-content;
+  padding: 0 0 2em 0;
   margin:auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  background-color: rgba(105, 105, 105, 0.58);
+  border-radius: 1.2em;
 }
 
 .shellImage{
@@ -538,13 +622,13 @@ h2 {
 }
 
 .charTextContainer{
-  position:absolute;
   width: 90%;
+  height:fit-content;
 }
 
 .charText{
   font-family: 'Roboto Mono', monospace;
-  margin-bottom:0.5em;
+  margin-top:1em;
 }
 
 
@@ -565,4 +649,24 @@ h2 {
 
 .inputField:focus{
   outline: none;
+}
+
+.titleFirstSteps{
+  margin-bottom: -0.5em;
+}
+
+.idrisCode{
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom:0.2em;
+  font-size: 0.9em;
+  border: 0px;
+  width:100%;
+  margin-top:1em;
+  color:rgba(255, 255, 255, 0.8);
+  margin-left: 0;
+  text-align: center;
+}
+
+.codeContainer{
+  text-align: center;
 }

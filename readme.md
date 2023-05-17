@@ -1,33 +1,25 @@
-# Tutorial de Programación en Iris
+# Tutorial de Programación en Idris
 
-Este es un tutorial de programación en Iris, un lenguaje de programación funcional con una sintaxis similar a huskell. Este tutorial ha sido creado usando una aplicación de React. A través de este tutorial, aprenderás los conceptos fundamentales de programación en Iris y cómo utilizarlos para crear tus propios programas.
+Este es un tutorial de programación en Idris, un lenguaje de programación funcional con una sintaxis similar a Haskell. Este tutorial ha sido creado usando una aplicación de React. A través de este tutorial, aprenderás los conceptos fundamentales de programación en Iris y cómo utilizarlos para crear tus propios programas.
 
 ## Requisitos
 
 ## Contenido
 
-El tutorial se divide en varias secciones, cada una de las cuales cubre un tema específico. A continuación, se muestra un resumen del contenido de cada sección:
+La página se divide en varias secciones, cada una de las cuales cubre un tema específico. A continuación, se muestra el contenido de cada sección:
 
-1. **Introducción a Iris:** 
+1. **Sobre Idris** 
 
-2. **Variables y tipos de datos:**
+2. **Instalación**
 
-3. **Estructuras de control de flujo:**
+3. **Características**
 
-4. **Funciones:** 
+4. **Primeros Pasos** 
 
-5. **Programación orientada a objetos:** 
+5. **Presentación** 
 
-6. **Módulos:** 
+6. **Integrantes** 
 
-7. **Manipulación de archivos:** 
-
-8. **Excepciones:** 
-
-## Contribución
-
-Si encuentras algún error o quieres contribuir a mejorar este tutorial, siéntete libre de enviar un pull request en GitHub.
-
-## Licencia
+7. **Documentación** 
 
 
